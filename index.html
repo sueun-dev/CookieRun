@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Devcrud">
+   <!--<link rel="icon" href="넣어야함" type="image/gif" />--> 
+    <title>Minting D63C</title>
+    <script>
+        const pageName = 'NFT'
+     </script>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Rubic main styles -->
+	<link rel="stylesheet" href="assets/css/rubic.css">
+    <body background="assets/imgs/header.jpg"></body>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+    <nav id="scrollspy" class="navbar page-navbar navbar-dark navbar-expand-md fixed-top" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="navbar-brand" href="#"><strong class="text-primary">D6</strong><span class="text-light">3C</span></a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.d63c.io/">D63C Main</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="header d-flex justify-content-center">
+        <div class="container">
+            <div class="row h-100 align-items-center">
+                <div class="col-md-7">
+                    <div class="header-content">
+                        <h3 class="header-title"><strong class="text-primary">Welcome to D63C</strong></h3>
+                        <h4 class="header-subtitle">Mint Your D63C NFT!</h4>
+                        <p>D63C - 새로운 메타버스 세계에 진입을 환영합니다.</p>
+                        <h2>1 NFT = <span id="get-price"></span> KLAY</h2>
+                        <div>
+                            <input type="number" id="number-of-tokens" value="1" style="margin-right: 5px; text-align:right; position:relative; left:0px; top: 9px; height: 55px; width: 120px; font-size: 30px;"/>
+                            <button type="button" onclick="buyERC721.mintWithETH()" class="btn btn-success" style="font-size: 30px;">Buy NFT</button>
+                          </div>
+                        <div><h2><span id="total-supply"></span>/<span id="max-supply"></span></h2></div>
+                        <br>
+                        <div id="Account", style="height: 20px; width: 250px; font-size: 17px;">
+                            <button class="button button4" onclick="App.CheckId()" style="height: 70px; width: 180px;" >Click Here! Check Your Kaikas Address</button>  
+                            </div>
+                    </div>
+                </div>
+
+                <div style="position:relative;left:px;top:px;">
+                    <div id="layer1" style="width:100px; height:100px; position:absolute; left:689px; top:238px; z-index:-1;"></div>
+                    <div class="head"><img src="./assets/imgs/ChangeIMG.gif" width="400" height="400"/></div>
+                </div>
+
+                  
+
+            </div>  
+        </div>
+    </header>
+
+    <footer class="footer py-4 bg-dark text-light"> 
+        <div class="container text-center">
+            <p class="mb-4 small">Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="https://www.d63c.io/">GO TO D63C</a></p>
+        </div>
+    </footer>
+	
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <!-- bootstrap 3 affix -->
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Rubic js -->
+    <script src="assets/js/abi.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/bignumber.js@9.0.2/bignumber.min.js' integrity="sha256-8hM/h5mrVPZGsV7j7Qmhw4mA17ztgmzcCA092JS4b7o" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/web3@1.6.1/dist/web3.min.js" integrity="sha256-XH+mnS1YTklQJ7VzeLSviplcaKwkRWpwDwHUNXVCuIU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js" integrity="sha256-nWBTbvxhJgjslRyuAKJHK+XcZPlCnmIAAMixz6EefVk=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
